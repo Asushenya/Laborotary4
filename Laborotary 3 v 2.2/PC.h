@@ -1,7 +1,7 @@
 #pragma once
 #include "Product.h"
 class PC:
-	public Product
+	virtual public Product
     {
     protected:
         string proccesorName;
@@ -16,7 +16,10 @@ class PC:
 	    void setCpu(double);
 	    double getCpu();
 
-      
+        void setPrice(int p)
+        {
+            PC::price = p;
+        }
 
  
 

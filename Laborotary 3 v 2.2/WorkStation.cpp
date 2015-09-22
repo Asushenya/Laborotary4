@@ -82,6 +82,7 @@ void WorkStation::showInfo()
 	Mouse::showInfo();
 	SetConsoleTextAttribute(hConsole2, (WORD)((2 << 2) | 6));
 	cout << "Количество элементов WS: " << itemCounter << endl;
+    cout << "Цена Рабочей станции: " << WorkStation::Product::price << " бел/руб" << endl;
 	SetConsoleTextAttribute(hConsole2, (WORD)((0 << 0) | 7));
 	cout << "----====| | | | | | | |====----" << endl;
 
@@ -96,4 +97,9 @@ void WorkStation::setName(string Name)
 void WorkStation::CAN_I_START_GTAV()
 {
     PC::cpu > 3.5 ? cout << "Yes you CAN..." : cout << "not you CAN't";
+}
+
+void WorkStation::setPrice(int p)
+{
+    WorkStation::Product::price = p;
 }

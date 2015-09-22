@@ -28,7 +28,7 @@ void HeadPhone::showInfo()
 
 	SetConsoleTextAttribute(hConsole5, (WORD)((2 << 1) | 1));
 	cout << "	Нижняя граница: " << downBorder << "GHz" << endl;
-	cout << "	Верхняя граница: " << upBorder << "GHz" << endl;
+	cout << "	Верхняя граница: " << upBorder << "GHz" << endl<<endl;
 	SetConsoleTextAttribute(hConsole5, (WORD)((0 << 0) | 7));
 	
 

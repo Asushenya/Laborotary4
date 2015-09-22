@@ -28,6 +28,7 @@ void Mouse::showInfo()
 	    SetConsoleTextAttribute(hConsole6, (WORD)((2 << 1) | 9));
 	    cout << "	dpi: " << dpi  << endl;
 	    cout << "	Количество кнопок: " << buttonCounter  << endl;
+        cout << "Цена Мыши: " << Mouse::price << " бел/руб" << endl << endl;;
 	    SetConsoleTextAttribute(hConsole6, (WORD)((0 << 0) | 7));
     }
 
@@ -40,3 +41,8 @@ int Mouse::getCounter()
     {
         return buttonCounter;
     }
+
+void Mouse::setPrice(int p)
+{
+    Mouse::price = p;
+}

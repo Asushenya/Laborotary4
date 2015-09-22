@@ -5,7 +5,11 @@
 #include "HeadPhone.h"
 #include "Mouse.h"
 class WorkStation
-	:public Product, public PC ,public Monitor, public HeadPhone,public Mouse
+	:// public Product,
+     public PC ,
+     public Monitor,
+     public HeadPhone,
+     public Mouse
 {
 private:
     string workStationName;
@@ -15,11 +19,11 @@ public:
 
     WorkStation::WorkStation() :							//WorkStation
         
-        Product::Product("empty"),
-        PC::PC("empty", 0.0),
-        Monitor::Monitor("empty", 0.00, 0),
-        HeadPhone::HeadPhone("empty", 0, 0),
-        Mouse::Mouse("empty", 0, 0)
+     
+        PC("empty", 0.0),
+       Monitor("empty", 0.00, 0),
+       HeadPhone("empty", 0, 0),
+        Mouse("empty", 0, 0)
     {
         itemCounter = 0;
     }
@@ -54,11 +58,10 @@ public:
 
     friend class PC;
 
-    friend void setPrice(HeadPhone a,int p)
-    {
-        
-    }
+
     void CAN_I_START_GTAV();
+
+    void setPrice(int p);
    
 
 };

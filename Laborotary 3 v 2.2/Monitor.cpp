@@ -20,7 +20,7 @@ void Monitor::showInfo()
 	    SetConsoleTextAttribute(hConsole4, (WORD)((2 << 4) | 10));
 	    cout << "Информация о Мониторе: " << endl;
         SetConsoleTextAttribute(hConsole4, (WORD)((2 << 2) | 20));
-        cout << "Производитель Монитора: " << monitorName << endl;
+        cout << "Производитель Монитора: " << monitorName << endl<<endl;
         SetConsoleTextAttribute(hConsole4, (WORD)((2 << 2) | 4));
 	    
 	    Display::showInfo();

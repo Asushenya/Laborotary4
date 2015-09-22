@@ -1,7 +1,7 @@
 #pragma once
 #include "Product.h"
 class Mouse:
-	public Product
+	virtual public Product
 {
 protected :
     string mouseName;
@@ -16,5 +16,6 @@ public:
 
     int getDpi();
     int getCounter();
+    void setPrice(int p);
 };
 

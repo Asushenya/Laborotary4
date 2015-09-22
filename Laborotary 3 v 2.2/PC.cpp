@@ -27,7 +27,7 @@ void PC::showInfo()
           cout << "Производитель Процессора: " << proccesorName<<endl;
 	    SetConsoleTextAttribute(hConsole1, (WORD)((2 << 2) | 4));
 	    cout << "        CPU: " << cpu << endl;
-        cout << "Цена процессора:  " << price<<" бел/руб"<<endl;
+        cout << "Цена процессора:  " << PC::price<<" бел/руб"<<endl<<endl;
 	    SetConsoleTextAttribute(hConsole1, (WORD)((0 << 0) | 7));
     }
 

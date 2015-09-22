@@ -2,7 +2,7 @@
 #include "Display.h"
 #include "Product.h"
 class Monitor:
-	public Product,public Display
+	virtual public Product,public Display
         {
         private:
             string monitorName;
@@ -22,6 +22,11 @@ class Monitor:
                 if (name.compare("empty") == 0)
                     monitorName = "empty";
                 else monitorName = name;
+            }
+
+            void setPrice(int p)
+            {
+                Monitor::price = p;
             }
         };
 

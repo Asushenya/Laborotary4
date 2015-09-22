@@ -1,7 +1,7 @@
 #pragma once
 #include "Product.h"
 class HeadPhone:
-	public Product
+	virtual public Product
 {
 private :
     int price;
@@ -19,5 +19,11 @@ public:
 
     int getUPBorder();
     int getDownBorder();
+
+    void setPrice(int p)
+    {
+        HeadPhone::price = p;
+       
+    }
 };
 

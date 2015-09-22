@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-class Product
+class Product  //Abstract class
     {
     protected:
         Product *next;
@@ -23,13 +23,9 @@ class Product
 	  virtual  string getName() ;
 
       virtual void showInfo() = 0;
+      virtual void setPrice(int) = 0;
+      
    
-      void setPrice(int p)
-      {
-          if (sizeof(price) == sizeof(p))
-              price = p;
-          else cout << "ошибка изменения поля price";
-      }
 
       int getPrice()
       {

@@ -21,10 +21,12 @@ int main()
     
 
     pc1 = new PC("Intel", 2.4);
+   
     list.Insert(pc1);
 
     pc2 = new PC("AMD", 3.5);
     list.Insert(pc2);
+    pc2->setPrice(500);
 
     Mouse *mouse1;
     mouse1 = new Mouse("Razer", 500, 6);
@@ -47,23 +49,24 @@ int main()
    
     WorkStation *WS2;
     WS2 = new WorkStation ("Lenovo", *pc1, *monitor1, *HeadPhone1, *mouse1, 4);
+    WS2->setPrice(650);
     list.Insert(WS2);
-    WS2->WorkStation::PC::setPrice(1000000);
+   
 
     list.Insert(WS1);
-    pc1->setPrice(654654654);
+   
     list.Show();
     cout << "//////////////////\n";
     list.Delete(mouse1);
     list.Delete(pc1);
     list.Delete(pc2);
-    list.Delete(mouse1);
     list.Delete(HeadPhone1);
     list.Delete(monitor1);
-    list.Delete(WS1);
+  
     cout << "//////////////////\n";
     list.Show();
-    list.Delete(pc1);
+    
+   
     return 0;
 }
 
