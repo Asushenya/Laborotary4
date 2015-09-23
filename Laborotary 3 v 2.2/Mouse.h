@@ -7,6 +7,7 @@ protected :
     string mouseName;
 	unsigned int dpi;
 	unsigned int buttonCounter;
+   
 public:
     Mouse() {};
 	Mouse(string,int,int);

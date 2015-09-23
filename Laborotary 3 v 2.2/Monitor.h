@@ -8,6 +8,12 @@ class Monitor:
             string monitorName;
         public:
             Monitor() {};
+            Monitor(Monitor &m)
+            {
+                this->diagonal = m.diagonal;
+                this->monitorName = m.monitorName;
+                this->ppi = m.ppi;
+            }
 	        Monitor(string,float,int);
 
 	        ~Monitor();

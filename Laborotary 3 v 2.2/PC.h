@@ -8,7 +8,13 @@ class PC:
 	    double cpu;
     public:
         PC() {};
-	    PC(string,double );
+        PC(PC & pc)
+        {
+            this->cpu = pc.cpu;
+            this->proccesorName = pc.proccesorName;
+        }
+        
+        PC(string,double );
 	    ~PC();
 
 	    void showInfo();

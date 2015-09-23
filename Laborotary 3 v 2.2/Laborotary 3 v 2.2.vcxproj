@@ -146,6 +146,7 @@
     <ClInclude Include="List.h" />
     <ClInclude Include="Monitor.h" />
     <ClInclude Include="Mouse.h" />
+    <ClInclude Include="NewWorkStation.h" />
     <ClInclude Include="PC.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="stdafx.h" />
@@ -158,6 +159,7 @@
     <ClCompile Include="Laborotary 3 v 2.2.cpp" />
     <ClCompile Include="Monitor.cpp" />
     <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="NewWorkStation.cpp" />
     <ClCompile Include="PC.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="stdafx.cpp">
