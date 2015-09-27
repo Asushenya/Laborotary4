@@ -67,7 +67,7 @@ void List::Delete(Product *p)
     if (p == begin)
     {
         begin = t->next;
-         cout << "Удален Объект типа "<<typeid(t).name()<<endl;
+         cout << "Удален Объект типа "<<typeid(*t).name()<<endl;
          cout << "информация об удаленном объекте: {" << endl;
          p->showInfo(); cout << "\n}\n\n";
         delete t;

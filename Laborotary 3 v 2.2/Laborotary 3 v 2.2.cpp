@@ -66,11 +66,11 @@ int main()
     NewWorkStation *w1; w1 = new NewWorkStation("Apple", *pc1, *monitor1, *mouse1, *HeadPhone1); w = w1;
     
     list.Show();
-    list.Insert(pc1);
+  
     list.Insert(w1);
     list.Show();
     list.Delete(w1);
-    list.Delete(pc1);
+   
     list.Show();
 
     return 0;

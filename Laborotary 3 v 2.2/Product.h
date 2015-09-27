@@ -16,7 +16,7 @@ class Product  //Abstract class
 		    string name;
     public:
    
-      explicit  Product() { price = 0; };
+      explicit  Product() { price = 80; };
       explicit  Product(string);
       virtual ~Product() { /*cout << "Destructor:" << typeid(*this).name()<<endl;*/ };
 	 virtual   void setName(string) ;
