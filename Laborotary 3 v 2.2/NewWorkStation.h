@@ -16,7 +16,7 @@ private :
     Mouse newMouse;
     HeadPhone newHeadPhone;
 public :
-    NewWorkStation(string name,PC pc,Monitor monitor, Mouse mouse,HeadPhone hp)//,HeadPhone hp)
+    NewWorkStation(string name,PC pc,Monitor monitor, Mouse mouse,HeadPhone hp)//  aggregation
     {
         newWorkStationName = name;
         newPC = pc;
